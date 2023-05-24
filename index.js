@@ -20,3 +20,37 @@
     6. Each function copies the input object and returns
           modified copy
 */
+
+//declare a variable named pizza with a value of an empty object
+
+const createPizza = () => {
+      const pizza = {}
+      return pizza
+}
+
+const pizzaObject = createPizza() 
+
+console.log(pizzaObject)
+// 1. Function for adding the toppings to the pizza object
+
+//create function named addTopping with a single parameter for the pizza object
+const addTopping = (t) => {
+      //use dot notation to add a topping propery to the pizza object
+      t.topping = "pepperoni"
+      //return the pizza object   
+}
+
+// 2. Function that bakes a pizza
+
+//create a function called bakePizza 
+const bakePizza = (pizza) => {
+      //use dot notation to add a baked property with a value of true
+      pizza.bake = true
+      //return the pizza    
+}
+
+addTopping(pizzaObject)
+console.log(pizzaObject)
+
+bakePizza(pizzaObject)
+console.log(pizzaObject)
